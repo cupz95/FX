@@ -11,7 +11,7 @@ on:
 
 jobs:
   Convert:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     steps:
       - name: FX Data Convert Action
         uses: FX31337/FX-Data-Convert-Action@v1.0.0
