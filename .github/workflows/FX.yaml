@@ -1,5 +1,19 @@
-- name: FX Data Convert Action
-  uses: FX31337/FX-Data-Convert-Action@v1.0.0
-with:
-    InputFile: 'myfile.csv'
-    OutputFormat: 'fxt'
+---
+name: Action
+
+on:
+  pull_request:
+    paths-ignore:
+      - '*.md'
+  push:
+    paths-ignore:
+      - '*.md'
+
+jobs:
+  Convert:
+    runs-on: ubuntu-latest
+    steps:
+      - name: FX Data Convert Action
+        uses: FX31337/FX-Data-Convert-Action@v1.0.0
+            InputFile: 'myfile.csv'
+            OutputFormat: 'fxt'
