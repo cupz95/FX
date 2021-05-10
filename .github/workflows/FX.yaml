@@ -1,0 +1,2 @@
+- name: FX Data Convert Action
+  uses: FX31337/FX-Data-Convert-Action@v1.0.0
